@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.chat-container {
+    flex: 1; /* this is short hand This allows the chat container to fill the available space */
+    overflow-y: auto; /* Scroll if content exceeds the container height */
+    padding: 10px;
+    display: flex;
+    flex-direction:column; /*  vertically */
+    align-items: flex-start; /* left alignment*/
+    background-color: #f7f7f7; 
+}
+
+/* Style for the chatbot messages */
+.msg-to-chatbot-container, .msg-from-chatbot-container {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+}
+
+.msg-to-chatbot-container {
+    background-color: #cbd2d9;
+    align-self: flex-end; /* basically chat container has left alignment default so to get right give flex-end */
+}
+
+.msg-from-chatbot-container {
+    background-color: #e57742;
+    color: white;
+    align-self: flex-start; /* Align chatbot messages to the left */
+}
+
+
+
+/* Adjust the second image to stay just above the input container */
+.fixed-bottom {
+    position: fixed;
+    bottom: 70px; /* Adjust this based on the height of your input container */
+    right: 10px;
+    
+}
+
+.user-input {
+    width: 75%; /* Adjust width of the input */
+    background-color: #cbd2d9;
+    font-family: "Roboto";
+    font-weight: 900;
+    height: 52px;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 15px;
+    margin-right: 8px;
+}
+
+.send-msg-btn {
+    background-color: #e57742;
+    color: white;
+    font-family: "Roboto";
+    height: 52px;
+    border-width: 0;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+}
+
+/* Additional style adjustments */
+.chatbot-heading {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 150px;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
